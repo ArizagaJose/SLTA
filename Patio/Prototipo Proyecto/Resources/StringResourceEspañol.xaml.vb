@@ -1,0 +1,3 @@
+﻿Class StringResourceEspañol
+
+End Class

@@ -1,0 +1,39 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SLTA"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="WinVehiculo"
+        mc:Ignorable="d"
+        Title="{DynamicResource Title_WinVehiculo}" Height="667" Width="1159" WindowState="Maximized" Loaded="Window_Loaded_1">
+    <Window.Background>
+        <ImageBrush ImageSource="../Resources/WindowBackground.bmp"/>
+    </Window.Background>
+    <Viewbox Margin="0,0,2,-4" Stretch="Fill">
+        <Grid Height="632" Width="1034" Background="{x:Null}">
+            <Button x:Name="BtnAtras" Content="{DynamicResource Btn_Atras}" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Left" Margin="10,586,0,0" VerticalAlignment="Top" Width="119" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Background="Gray" Height="35"/>
+            <Label Content="{DynamicResource Lbl_VIN}" HorizontalAlignment="Left" Margin="14,131,0,0" VerticalAlignment="Top" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" FontSize="22"/>
+            <Label Content="{DynamicResource Lbl_Marca}" HorizontalAlignment="Left" Margin="27,224,0,0" VerticalAlignment="Top" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" FontSize="22"/>
+            <Label Content="{DynamicResource Lbl_Modelo}" HorizontalAlignment="Left" Margin="14,326,0,0" VerticalAlignment="Top" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" RenderTransformOrigin="0.58,2.77" FontSize="22"/>
+            <Label Content="{DynamicResource Lbl_Año}" HorizontalAlignment="Left" Margin="14,418,0,0" VerticalAlignment="Top" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" FontSize="22"/>
+            <Label Content="{DynamicResource Lbl_Color}" HorizontalAlignment="Left" Margin="670,131,0,0" VerticalAlignment="Top" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" FontSize="22"/>
+            <Label Content="{DynamicResource Lbl_Pais}" HorizontalAlignment="Left" Margin="670,285,0,0" VerticalAlignment="Top" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" RenderTransformOrigin="18.592,-2.513" Height="42" FontSize="22"/>
+            <Label Content="{DynamicResource Lbl_Tipo}" HorizontalAlignment="Left" Margin="668,421,0,0" VerticalAlignment="Top" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" RenderTransformOrigin="19.422,1.177" FontSize="22"/>
+            <TextBox x:Name="TxtBoxVIN" HorizontalAlignment="Left" Height="46" Margin="127,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="260" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Background="#FF282525" Foreground="White"/>
+            <TextBox x:Name="TxtBoxMarca" HorizontalAlignment="Left" Height="46" Margin="127,215,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="260" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Background="#FF282525" Foreground="White" IsEnabled="False"/>
+            <TextBox x:Name="TxtBoxModelo" HorizontalAlignment="Left" Height="46" Margin="127,326,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="260" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Background="#FF282525" Foreground="White" IsEnabled="False"/>
+            <TextBox x:Name="TxtBoxAño" HorizontalAlignment="Left" Height="46" Margin="127,412,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="260" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Background="#FF282525" Foreground="White" IsEnabled="False"/>
+            <TextBox x:Name="TxtBoxColor" HorizontalAlignment="Left" Height="46" Margin="747,131,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="260" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Background="#FF282525" Foreground="White" IsEnabled="False"/>
+            <TextBox x:Name="TxtBoxPais" HorizontalAlignment="Left" Height="46" Margin="747,276,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="260" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Background="#FF282525" Foreground="White" IsEnabled="False"/>
+            <ComboBox x:Name="ComboBoxTipo" HorizontalAlignment="Left" Margin="747,412,0,0" VerticalAlignment="Top" Width="260" Background="Black" BorderBrush="#FF282525" IsEnabled="False" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Height="46">
+                <System:String>Auto</System:String>
+                <System:String>Camioneta</System:String>
+                <System:String>SUV</System:String>
+            </ComboBox>
+            <Button x:Name="BtnIngresar" Content="{DynamicResource Btn_Ingresar}" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Left" Margin="919,586,0,0" VerticalAlignment="Top" Width="105" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Background="Gray" Height="36"/>
+            <Label x:Name="LblUsuario" Content="Usuario" HorizontalAlignment="Left" Margin="931,7,0,0" VerticalAlignment="Top" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" FontSize="24"/>
+
+        </Grid>
+    </Viewbox>
+</Window>

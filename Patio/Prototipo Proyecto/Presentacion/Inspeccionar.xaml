@@ -1,0 +1,41 @@
+﻿<Window x:Class="Inspeccionar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SLTA"
+        mc:Ignorable="d"
+        Title="Inspeccion de vehiculos - SLTA" Height="450" Width="800" WindowState="Maximized" Loaded="Window_Loaded">
+    <Window.Background>
+        <ImageBrush ImageSource="../Resources/WindowBackground.bmp"/>
+    </Window.Background>
+    <Viewbox Stretch="Fill">
+        <Grid x:Name="grid" Height="419" Width="792" Loaded="Grid_Loaded">
+            <Label Content="VIN" HorizontalAlignment="Left" Margin="21,90,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.646,-0.121" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Button x:Name="BtnAtras" Content="Atrás" HorizontalAlignment="Left" Margin="10,380,0,0" VerticalAlignment="Top" Width="100" Height="30" Background="Gray" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Style="{DynamicResource RoundCorner}"/>
+            <Button x:Name="BtnSiguiente" Content="Agregar" HorizontalAlignment="Left" Margin="477,291,0,0" VerticalAlignment="Top" Width="100" Height="30" Background="Gray" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Style="{DynamicResource RoundCorner}"/>
+
+            <Label Content="Funcionario" HorizontalAlignment="Left" Margin="21,157,0,0" VerticalAlignment="Top" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TextBoxFuncionario" HorizontalAlignment="Left" Height="23" Margin="119,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Foreground="White" Background="#FF282525" LostFocus="TextBox_LostFocus" IsEnabled="False"/>
+            <Label Content="Nro Inspeccion: " HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TextBoxIdInspeccion" HorizontalAlignment="Left" Height="23" Margin="117,12,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" IsEnabled="False">
+                <TextBox.Background>
+                    <SolidColorBrush Color="{DynamicResource Color1}"/>
+                </TextBox.Background>
+            </TextBox>
+
+            <Label Content="Fecha" HorizontalAlignment="Left" Margin="21,207,0,0" VerticalAlignment="Top" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TextBoxFecha" HorizontalAlignment="Left" Height="23" Margin="119,210,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Foreground="White" Background="#FF282525" LostFocus="TextBox_LostFocus_1" IsEnabled="False"/>
+            <Label Content="Hora" HorizontalAlignment="Left" Margin="21,255,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.036,-0.101" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TextBoxHora" HorizontalAlignment="Left" Height="23" Margin="119,258,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Foreground="White" Background="#FF282525" LostFocus="TextBox_LostFocus_2" IsEnabled="False"/>
+            <ListBox x:Name="ListBoxDesc" HorizontalAlignment="Left" Height="178" Margin="427,96,0,0" VerticalAlignment="Top" Width="208" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Foreground="White" Background="#FF282525" LostFocus="ListBox_LostFocus"/>
+            <Label Content="Agregar  daño" HorizontalAlignment="Left" Margin="303,96,0,0" VerticalAlignment="Top" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Label x:Name="LblUsuario" Content="Usuario" HorizontalAlignment="Left" Margin="731,10,0,0" VerticalAlignment="Top" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Label x:Name="label_Copy2" Content="!" HorizontalAlignment="Left" Margin="244,86,0,0" VerticalAlignment="Top" Foreground="Red" FontSize="20" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" />
+            <Button x:Name="button" Content="Inspeccionar" HorizontalAlignment="Left" Margin="682,379,0,0" VerticalAlignment="Top" Width="100" Height="30" Background="Gray" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Style="{DynamicResource RoundCorner}"/>
+            <ComboBox x:Name="comboBoxVin" HorizontalAlignment="Left" Margin="119,90,0,0" VerticalAlignment="Top" Width="120" Background="#FF282525" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+
+
+        </Grid>
+    </Viewbox>
+</Window>

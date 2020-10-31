@@ -1,0 +1,39 @@
+﻿<Window x:Class="CrearSubzona"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SLTA"
+        mc:Ignorable="d"
+        Title="Crear Sub zona - SLTA" Height="450" Width="800" WindowState="Maximized" >
+    <Window.Background>
+        <ImageBrush ImageSource="../Resources/WindowBackground.bmp"/>
+    </Window.Background>
+    <Viewbox Stretch="Fill">
+        <Grid x:Name="gird" Height="420" Width="792">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Id SubZona" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Height="48" Width="85" FontSize="15" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TextBoxNroSubZona" HorizontalAlignment="Left" Height="48" Margin="136,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207"  Background="#FF282525" FontSize="20" IsEnabled="False" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Label Content="Capacidad" HorizontalAlignment="Left" Margin="408,272,0,0" VerticalAlignment="Top" Height="48" Width="103" FontSize="15" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TextBoxCapacidad" HorizontalAlignment="Left" Height="48" Margin="533,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" IsEnabled="False"  Background="#FF282525" FontSize="20" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Label Content="Nm Zona" HorizontalAlignment="Left" Margin="10,177,0,0" VerticalAlignment="Top" Height="48" Width="85" FontSize="15" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <ComboBox x:Name="comboBoxNombreZona" HorizontalAlignment="Left" Height="48" Margin="136,177,0,0"  VerticalAlignment="Top" Width="207" FontSize="20" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Label Content="Fila" HorizontalAlignment="Left" Margin="409,77,0,0" VerticalAlignment="Top" Height="48" Width="78" FontSize="15" RenderTransformOrigin="0.585,0.3" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TextBoxFilas" HorizontalAlignment="Left" Height="48" Margin="533,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" Foreground="White" Background="#FF282525" FontSize="20" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Label Content="Esquiva" HorizontalAlignment="Left" Margin="408,177,0,0" VerticalAlignment="Top" Height="48" Width="79" FontSize="15" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TextBoxEstivas" HorizontalAlignment="Left" Height="48" Margin="533,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" Foreground="White" Background="#FF282525" FontSize="20" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Button x:Name="BtnModificar" Content="Crear" HorizontalAlignment="Left" Margin="670,375,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="Gray" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Style="{DynamicResource RoundCorner}"/>
+
+            <Button x:Name="BtnAtras" Content="Atras" HorizontalAlignment="Left" Margin="13,375,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="Gray" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Style="{DynamicResource RoundCorner}"/>
+            <Label Content="Nombre" HorizontalAlignment="Left" Margin="10,272,0,0" VerticalAlignment="Top" Height="48" Width="103" FontSize="15" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TextBoxNombre" HorizontalAlignment="Left" Height="48" Margin="135,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" Foreground="White" Background="#FF282525" FontSize="20" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+
+            <Label x:Name="label_Copy_Patio" Content="!" HorizontalAlignment="Left" Margin="347,283,0,0" VerticalAlignment="Top" Foreground="Red" FontSize="20" Width="20"/>
+            <Label x:Name="label_Copy_Flla" Content="!" HorizontalAlignment="Left" Margin="745,87,0,0" VerticalAlignment="Top" Foreground="Red" FontSize="20" />
+            <Label x:Name="label_Copy_Nombre" Content="!" HorizontalAlignment="Left" Margin="348,188,0,0" VerticalAlignment="Top" Foreground="Red" FontSize="20" />
+            <Label x:Name="label_Copy_Esquiva" Content="!" HorizontalAlignment="Left" Margin="740,188,0,0" VerticalAlignment="Top" Foreground="Red" FontSize="20" />
+        </Grid>
+    </Viewbox>
+</Window>

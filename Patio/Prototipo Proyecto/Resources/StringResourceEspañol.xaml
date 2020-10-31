@@ -1,0 +1,101 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:SLTA"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <!--Login.xaml-->
+    <system:String x:Key="Title_Login">Login - SLTA</system:String>
+    <system:String x:Key="Btn_Login">Ingresar</system:String>
+    <system:String x:Key="Lbl_Usr">Usuario</system:String>
+    <system:String x:Key="Lbl_Pwd">Constraseña</system:String>
+    <system:String x:Key="Btn_Idiomas">Idiomas</system:String>
+    <system:String x:Key="Btn_IdiomaEspañol">Español</system:String>
+    <system:String x:Key="Btn_IdiomaIngles">Ingles</system:String>
+
+    <!--Menu.xaml-->
+    <system:String x:Key="Title_Menu">Menu - SLTA</system:String>
+    <system:String x:Key="Lbl_Lote">Marcar lotes arribados</system:String>
+    <system:String x:Key="Lbl_Vehicle">Configuracion vehiculos</system:String>
+    <system:String x:Key="Lbl_ListarZona">Lista de zonas</system:String>
+    <system:String x:Key="Lbl_ListarSubZonas">lista de sub-zonas</system:String>
+    <system:String x:Key="Lbl_Inspeccion">Inspeccionar</system:String>
+    <system:String x:Key="Lbl_MoverVehiculo">Mover Vehiculo</system:String>
+    <!--MenuAdmin.xaml-->
+    <system:String x:Key="Lbl_Zone">Zonas</system:String>
+
+    <!--AgregarDaño.xaml-->
+    <system:String x:Key="Title_AgregarDaño">Daños - SLTA</system:String>
+    <system:String x:Key="Lbl_Nombre">Nombre</system:String>
+    <system:String x:Key="Lbl_Descripcion">Descripcion</system:String>
+    <system:String x:Key="Lbl_Imagen">Imagen</system:String>
+    <system:String x:Key="Btn_Examinar">Examinar</system:String>
+
+
+    <!--AsignarVehiculo.xaml-->
+    <system:String x:Key="Title_AsignarVehiculo">Asignar vehiculo a zona - SLTA</system:String>
+    <system:String x:Key="Lbl_VIN">Ingresar VIN</system:String>
+    <system:String x:Key="Lbl_patio">Ingresar patio</system:String>
+    <system:String x:Key="Lbl_Zona">Ingresar Zona</system:String>
+    <system:String x:Key="Lbl_Fila">Fila</system:String>
+    <system:String x:Key="Lbl_Estiva">Estiva</system:String>
+
+    <!--ConfgZonas.xaml-->
+    <system:String x:Key="Title_ConfgZonas">Configuracion de zona- SLTA</system:String>
+    <system:String x:Key="Lbl_CrearZona">Crear Zona</system:String>
+    <system:String x:Key="Lbl_CrearSubZona">Crear Sub Zona</system:String>
+    <system:String x:Key="Lbl_ModificarZona">Modicar Zona</system:String>
+    <system:String x:Key="Lbl_ModificarSubZona">Modicar Sub Zona</system:String>
+
+    <!--CrearZona.xaml-->
+    <system:String x:Key="Title_CrearZona">Crear zona - SLTA</system:String>
+    <system:String x:Key="Lbl_IdZona">ID Zona</system:String>
+    <system:String x:Key="Lbl_Nombrepatio">Nombre patio</system:String>
+    <system:String x:Key="Lbl_Capacidad">Capacidad</system:String>
+
+    <!--CrearSubZona.xaml-->
+    <system:String x:Key="Title_CrearSubZona">Crear sub zona - SLTA</system:String>
+    <system:String x:Key="Lbl_IdSubZona">ID sub zona</system:String>
+    <system:String x:Key="Lbl_nombreZona">Nombre sub zona</system:String>
+
+    <!--infoSubZonas.xaml-->
+    <system:String x:Key="Title_InfoSubZonas">Informacion Sub Zona- SLTA</system:String>
+
+    <!--InfoZona.xaml-->
+    <system:String x:Key="Title_InfoZona">Informacion Zona- SLTA</system:String>
+
+    <!--InspeccionarVehiculo.xaml-->
+    <system:String x:Key="Title_InspeccionVehiculo">Inspeccion de vehiculos - SLTA</system:String>
+    <system:String x:Key="Lbl_NroInspeccion">N° Inspeccion</system:String>
+    <system:String x:Key="Lbl_Funcionario">Funcionario</system:String>
+    <system:String x:Key="Lbl_Fecha">Fecha</system:String>
+    <system:String x:Key="Lbl_Hora">Hora</system:String>
+    <system:String x:Key="Lbl_Lugar">Lugar</system:String>
+    <system:String x:Key="Lbl_AgregarDaño">Agregar daño</system:String>
+    <system:String x:Key="Btn_Agregar">Agregar</system:String>
+
+    <!--InspeccionarVehiculo2.xaml-->
+    <system:String x:Key="Title_InspeccionVehiculo2">Inspeccion de vehiculos - SLTA</system:String>
+    <system:String x:Key="Lbl_NroDaño">N° Daño</system:String>
+    
+
+    <!--MarcarLote.xaml-->
+    <system:String x:Key="Title_marcarLote">Marcar lote- SLTA</system:String>
+    <system:String x:Key="Lbl_IdLote">Ingresar id lote</system:String>
+
+
+    <!--Generales-->
+    <system:String x:Key="MsgBox_Conectar">Usuario o contraseña incorrecta</system:String>
+    <system:String x:Key="Btn_Ingresar">Ingresar</system:String>
+    <system:String x:Key="Btn_Atras">Atrás</system:String>
+
+
+
+
+
+
+
+
+
+
+
+</ResourceDictionary>

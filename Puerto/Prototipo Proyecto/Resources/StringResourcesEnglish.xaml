@@ -1,0 +1,85 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:SLTA"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <!--Login.xaml-->
+    <system:String x:Key="Title_Login">Login - SLTA</system:String>
+    <system:String x:Key="Btn_Login">Login</system:String>
+    <system:String x:Key="Lbl_Usr">User</system:String>
+    <system:String x:Key="Lbl_Pwd">Password</system:String>
+    <system:String x:Key="Btn_Idiomas">Languages</system:String>
+    <system:String x:Key="Btn_IdiomaEspañol">Spanish</system:String>
+    <system:String x:Key="Btn_IdiomaIngles">English</system:String>
+
+    <!--Menu.xaml-->
+    <system:String x:Key="Title_Menu">Menu - SLTA</system:String>
+    <system:String x:Key="Lbl_Import">Import vehicles</system:String>
+    <system:String x:Key="Lbl_Imprimir">Print reports</system:String>
+    <system:String x:Key="Lbl_Escanear">Scan VIN</system:String>
+    <system:String x:Key="Lbl_Lotes">Batch configuration</system:String>
+    <system:String x:Key="Lbl_ListaVehiculos">Vehicle list</system:String>
+    <system:String x:Key="Lbl_Inspeccion">Inspect</system:String>
+
+    <!--EscanearVin.xaml-->
+    <system:String x:Key="Title_EscanearVin">VIN Reading - SLTA</system:String>
+    <system:String x:Key="Btn_QR">Read QR</system:String>
+    <system:String x:Key="Btn_LeerFoto">Read picture</system:String>
+    <system:String x:Key="Btn_IngresarVehiculo">Manual entry</system:String>
+
+    <!--InfoVehiculo.xaml-->
+    <system:String x:Key="Title_InfoVehiculo">Vehicle Information - SLTA</system:String>
+    <system:String x:Key="Lbl_VIN">VIN</system:String>
+    <system:String x:Key="Lbl_Marca">Brand</system:String>
+    <system:String x:Key="Lbl_Modelo">Model</system:String>
+    <system:String x:Key="Lbl_Año">Year</system:String>
+    <system:String x:Key="Lbl_Color">Color</system:String>
+    <system:String x:Key="Lbl_Pais">Country</system:String>
+    <system:String x:Key="Lbl_Tipo">Type</system:String>
+    <system:String x:Key="Lbl_Lote">Lot</system:String>
+    <system:String x:Key="Lbl_ID">ID</system:String>
+
+    <!--InspeccionarVehiculo.xaml-->
+    <system:String x:Key="Title_InspeccionVehiculo">Vehicle Inspection - SLTA</system:String>
+    <system:String x:Key="Lbl_NroInspeccion">N° Inspection</system:String>
+    <system:String x:Key="Lbl_Funcionario">Employee</system:String>
+    <system:String x:Key="Lbl_Fecha">Date</system:String>
+    <system:String x:Key="Lbl_Hora">Hour</system:String>
+    <system:String x:Key="Lbl_Lugar">Place</system:String>
+    <system:String x:Key="Lbl_AgregarDaño">Add damage</system:String>
+    <system:String x:Key="Btn_Agregar">Add</system:String>
+
+    <!--InspeccionarVehiculo2.xaml-->
+    <system:String x:Key="Title_InspeccionVehiculo2">Vehicle Inspection - SLTA</system:String>
+    <system:String x:Key="Lbl_NroDaño">N° Damage</system:String>
+    <system:String x:Key="Lbl_Nombre">Name</system:String>
+    <system:String x:Key="Lbl_Imagen">Picture</system:String>
+    <system:String x:Key="Lbl_Descripcion">Description</system:String>
+    <system:String x:Key="Btn_Examinar">Examinate</system:String>
+
+    <!--ListaVehiculos.xaml-->
+    <system:String x:Key="Title_ListaVehiculos">Vehicle List - SLTA</system:String>
+    <system:String x:Key="Btn_VerMas">More Info</system:String>
+    <system:String x:Key="Btn_Crear">Create</system:String>
+
+    <!--WinVehiculo.xaml-->
+    <system:String x:Key="Title_IngresoVehiculo">Manual Entry - SLTA</system:String>
+
+    <!--Generales-->
+    <system:String x:Key="MsgBox_Conectar">Incorrect user or password</system:String>
+    <system:String x:Key="Btn_Ingresar">Add</system:String>
+    <system:String x:Key="Btn_Atras">Back</system:String>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ResourceDictionary>

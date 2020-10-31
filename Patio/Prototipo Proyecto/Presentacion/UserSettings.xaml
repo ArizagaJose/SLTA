@@ -1,0 +1,38 @@
+﻿<Window x:Class="UsserSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SLTA"
+        mc:Ignorable="d"
+        Title="User settings - SLTA" WindowStartupLocation="CenterScreen" WindowState="Maximized" Height="977.737" Width="1771.868">
+    <Window.Background>
+        <ImageBrush ImageSource="../Resources/WindowBackground.bmp"/>
+    </Window.Background>
+    <Viewbox Margin="6,0,4,6" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+        <Viewbox.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0.229"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Viewbox.RenderTransform>
+        <Grid x:Name="grid1" Height="993" Width="2135">
+            <Button x:Name="ButtonLogout" Content="Logout" Margin="1706,878,0,0" Height="105" ClipToBounds="True" Background="#FF282525" Foreground="White" IsTabStop="False" FontSize="36" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" MinWidth="201" HorizontalAlignment="Left" VerticalAlignment="Top" Width="419" Style="{DynamicResource RoundCorner}"/>
+            <Button x:Name="ButtonAtras" Content="Atras" Height="105" ClipToBounds="True" Background="#FF282525" Foreground="White" IsTabStop="False" FontSize="36" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" MinWidth="201" HorizontalAlignment="Left" VerticalAlignment="Top" Width="419" Margin="10,878,0,0" Style="{DynamicResource RoundCorner}"/>
+
+
+            <Label Content="" Margin="58,53,0,0" Height="215" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Width="257" VerticalAlignment="Top" HorizontalAlignment="Left">
+                <Label.Background>
+                    <ImageBrush ImageSource="C:\Users\lucas\Desktop\proyecto\SLTA\Patio\Prototipo Proyecto\Resources\logo.png"/>
+                </Label.Background>
+            </Label>
+            <Label Content="Nombre de usuario: " Margin="78,362,0,0" RenderTransformOrigin="0.591,-1.209" FontSize="36" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" HorizontalAlignment="Left" VerticalAlignment="Top" Height="54" Width="370"/>
+            <Label Content="Rol del usuario: " Margin="78,510,0,0" RenderTransformOrigin="0.591,-1.209" FontSize="36" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" HorizontalAlignment="Left" VerticalAlignment="Top" Height="55" Width="370"/>
+            <TextBox x:Name="TxtBoxUsuario" Height="63" Margin="582,362,0,0" TextWrapping="Wrap" Background="#FF282525" Foreground="White" FontSize="36" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" MinWidth="250" MinHeight="63" HorizontalAlignment="Left" VerticalAlignment="Top" Width="420" IsEnabled="False"/>
+            <TextBox x:Name="TxtBoxRol" Height="63" Margin="582,502,0,0" TextWrapping="Wrap" Background="#FF282525" Foreground="White" FontSize="36" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" MinWidth="250" MinHeight="63" HorizontalAlignment="Left" VerticalAlignment="Top" Width="420" IsEnabled="False"/>
+
+        </Grid>
+    </Viewbox>
+</Window>

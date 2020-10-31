@@ -1,0 +1,42 @@
+﻿<Window x:Class="InfoVehiculo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SLTA"
+        mc:Ignorable="d"
+        Title="Informacion de Vehiculo - SLTA" Height="562.5" Width="1073" WindowState="Maximized" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="../Resources/WindowBackground.bmp"/>
+    </Window.Background>
+    <Viewbox Stretch="Fill">
+        <Grid Height="420" Width="792">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="LblUsuario" Content="Usuario" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" FontSize="24" Height="49" Width="102" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Label Content="{DynamicResource Lbl_VIN}" HorizontalAlignment="Left" Margin="28,77,0,0" VerticalAlignment="Top" Height="48" Width="63" FontSize="22" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TxtBoxVIN" HorizontalAlignment="Left" Height="48" Margin="113,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" IsEnabled="False" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Label Content="{DynamicResource Lbl_Marca}" HorizontalAlignment="Left" Margin="28,153,0,0" VerticalAlignment="Top" Height="48" Width="79" FontSize="22" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TxtBoxMarca" HorizontalAlignment="Left" Height="48" Margin="113,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" IsEnabled="False" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Label Content="{DynamicResource Lbl_Modelo}" HorizontalAlignment="Left" Margin="28,235,0,0" VerticalAlignment="Top" Height="48" Width="85" FontSize="22" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TxtBoxModelo" HorizontalAlignment="Left" Height="48" Margin="113,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" IsEnabled="False" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Label Content="{DynamicResource Lbl_Año}" HorizontalAlignment="Left" Margin="28,302,0,0" VerticalAlignment="Top" Height="48" Width="63" FontSize="22" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TxtBoxAño" HorizontalAlignment="Left" Height="48" Margin="113,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" IsEnabled="False" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Label Content="{DynamicResource Lbl_Color}" HorizontalAlignment="Left" Margin="457,77,0,0" VerticalAlignment="Top" Height="48" Width="78" FontSize="22" RenderTransformOrigin="0.585,0.3" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TxtBoxColor" HorizontalAlignment="Left" Height="48" Margin="540,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" IsEnabled="False" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Label Content="{DynamicResource Lbl_Pais}" HorizontalAlignment="Left" Margin="463,153,0,0" VerticalAlignment="Top" Height="48" Width="79" FontSize="22" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TxtBoxPais" HorizontalAlignment="Left" Height="48" Margin="540,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" IsEnabled="False" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Label Content="{DynamicResource Lbl_Lote}" HorizontalAlignment="Left" Margin="463,306,0,0" VerticalAlignment="Top" Height="48" Width="57" FontSize="22" RenderTransformOrigin="0.852,0.522" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TxtBoxLote" HorizontalAlignment="Left" Height="48" Margin="540,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" IsEnabled="False" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Button x:Name="BtnAtras" Content="{DynamicResource Btn_Atras}" HorizontalAlignment="Left" Margin="10,383,0,0" VerticalAlignment="Top" Width="81" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Style="{DynamicResource RoundCorner}" Height="27"/>
+            <Label Content="{DynamicResource Lbl_ID}" HorizontalAlignment="Left" Margin="642,306,0,0" VerticalAlignment="Top" Height="48" Width="35" FontSize="22" RenderTransformOrigin="5.503,1.262" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TxtBoxID" HorizontalAlignment="Left" Height="48" Margin="700,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" IsEnabled="False" RenderTransformOrigin="3.225,1.762" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Label Content="{DynamicResource Lbl_Tipo}" HorizontalAlignment="Left" Margin="463,235,0,0" VerticalAlignment="Top" Height="48" Width="79" FontSize="22" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TxtBoxTipo" HorizontalAlignment="Left" Height="48" Margin="540,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" IsEnabled="False" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <TextBox x:Name="TxtBoxInspeccion"  HorizontalAlignment="Left" Height="33" Margin="587,373,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" IsEnabled="False"/>
+            <Label Content="Inspeccion" HorizontalAlignment="Left" Margin="457,373,0,0" VerticalAlignment="Top" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" FontSize="22"/>
+        </Grid>
+    </Viewbox>
+</Window>

@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:SLTA"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+
+
+    <!--Login.xaml-->
+    <system:String x:Key="Title_Login">Login - SLTA</system:String>
+    <system:String x:Key="Btn_Login">Ingresar</system:String>
+    <system:String x:Key="Lbl_Usr">Usuario</system:String>
+    <system:String x:Key="Lbl_Pwd">Contraseña</system:String>
+    <system:String x:Key="Btn_Idiomas">Idiomas</system:String>
+    <system:String x:Key="Btn_IdiomaEspañol">Español</system:String>
+    <system:String x:Key="Btn_IdiomaIngles">Ingles</system:String>
+</ResourceDictionary>

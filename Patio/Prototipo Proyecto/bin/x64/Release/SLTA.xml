@@ -1,0 +1,373 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SLTA
+</name>
+</assembly>
+<members>
+<member name="T:SLTA.My.MyWpfExtension">
+ <summary>
+ Módulo utilizado para definir las propiedades disponibles en el espacio de nombres My de WPF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:SLTA.My.MyWpfExtension.Application">
+ <summary>
+ Devuelve el objeto de aplicación de la aplicación en ejecución
+ </summary>
+</member>
+<member name="P:SLTA.My.MyWpfExtension.Computer">
+ <summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member>
+<member name="P:SLTA.My.MyWpfExtension.User">
+ <summary>
+ Devuelve información sobre el usuario actual.  Si desea ejecutar la aplicación con las credenciales 
+ del usuario de Windows actual, llame a My.User.InitializeWithWindowsUser().
+ </summary>
+</member>
+<member name="P:SLTA.My.MyWpfExtension.Log">
+ <summary>
+ Devuelve el registro de la aplicación. El archivo de configuración de la aplicación puede configurar los agentes de escucha.
+ </summary>
+</member>
+<member name="P:SLTA.My.MyWpfExtension.Windows">
+ <summary>
+ Devuelve la colección de Windows definida en el proyecto.
+ </summary>
+</member>
+<member name="T:SLTA.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.AutoLote">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_admin">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_import">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_import2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_inspect">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_inspection">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_list">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_lista2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_lot">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_lote2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_picture">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_print">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_qr">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_report2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_scan">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_scan2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_vehicle">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.logo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.Proxima_Nova_Alt_Light">
+<summary>
+  Busca un recurso adaptado de tipo System.Byte[].
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.WindowBackground">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:SLTA.AsignarVehiculo">
+<summary>
+AsignarVehiculo
+</summary>
+</member>
+<member name="M:SLTA.AsignarVehiculo.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.ConfgVehiculos">
+<summary>
+ConfgVehiculos
+</summary>
+</member>
+<member name="M:SLTA.ConfgVehiculos.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.ConfgZonas">
+<summary>
+ConfgZonas
+</summary>
+</member>
+<member name="M:SLTA.ConfgZonas.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.CrearSubzona">
+<summary>
+CrearSubzona
+</summary>
+</member>
+<member name="M:SLTA.CrearSubzona.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.CrearZona">
+<summary>
+CrearZona
+</summary>
+</member>
+<member name="M:SLTA.CrearZona.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.InfoSubZonas">
+<summary>
+InfoSubZonas
+</summary>
+</member>
+<member name="M:SLTA.InfoSubZonas.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.InfoZona">
+<summary>
+InfoZona
+</summary>
+</member>
+<member name="M:SLTA.InfoZona.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.ListarSubZonas">
+<summary>
+ListarSubZonas
+</summary>
+</member>
+<member name="M:SLTA.ListarSubZonas.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.ListarSubZonasM">
+<summary>
+ListarSubZonasM
+</summary>
+</member>
+<member name="M:SLTA.ListarSubZonasM.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.listarZonas">
+<summary>
+ListarZonas
+</summary>
+</member>
+<member name="M:SLTA.listarZonas.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.listarZonasM">
+<summary>
+ListarZonasM
+</summary>
+</member>
+<member name="M:SLTA.listarZonasM.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.MarcarLote">
+<summary>
+MarcarLote
+</summary>
+</member>
+<member name="M:SLTA.MarcarLote.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.Menu">
+<summary>
+Menu
+</summary>
+</member>
+<member name="M:SLTA.Menu.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.MenuAdmin">
+<summary>
+MenuAdmin
+</summary>
+</member>
+<member name="M:SLTA.MenuAdmin.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.AgregarDaño">
+<summary>
+AgregarDaño
+</summary>
+</member>
+<member name="M:SLTA.AgregarDaño.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.Inspeccionar">
+<summary>
+Inspeccionar
+</summary>
+</member>
+<member name="M:SLTA.Inspeccionar.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.modificarSubZona">
+<summary>
+modificarSubZona
+</summary>
+</member>
+<member name="M:SLTA.modificarSubZona.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.modificarZona">
+<summary>
+modificarZona
+</summary>
+</member>
+<member name="M:SLTA.modificarZona.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.UsserSettings">
+<summary>
+UsserSettings
+</summary>
+</member>
+<member name="M:SLTA.UsserSettings.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:SLTA.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:SLTA.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="T:SLTA.Login">
+<summary>
+Login
+</summary>
+</member>
+<member name="M:SLTA.Login.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+</members>
+</doc>

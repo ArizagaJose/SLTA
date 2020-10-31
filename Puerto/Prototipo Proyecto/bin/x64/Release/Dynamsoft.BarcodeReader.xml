@@ -1,0 +1,698 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dynamsoft.BarcodeReader</name>
+    </assembly>
+    <members>
+        <member name="T:Dynamsoft.Barcode.BarcodeReader">
+            <summary>
+             Defines a class provides functions for working with extracting barcode data.
+            </summary>
+        </member>
+        <member name="M:Dynamsoft.Barcode.BarcodeReader.#ctor">
+            <summary>
+             Creates an instance of BarcodeReader with default settings.
+            </summary>
+            <exception cref="T:Dynamsoft.Barcode.BarcodeReaderException">
+            	The exception thrown by Dynamsoft Barcode Reader.
+            </exception>
+        </member>
+        <member name="M:Dynamsoft.Barcode.BarcodeReader.#ctor(System.String)">
+            <summary>
+             Creates an instance of BarcodeReader and sets license keys.
+            </summary>
+            <param name="strLicenseKey">
+             The license keys to be set.
+            </param>
+            <exception cref="T:Dynamsoft.Barcode.BarcodeReaderException">
+            	The exception thrown by Dynamsoft Barcode Reader.
+            </exception>
+        </member>
+        <member name="M:Dynamsoft.Barcode.BarcodeReader.LoadSettingsFromFile(System.String)">
+             <summary>
+             Loads parameter settings from a JSON file.
+             </summary>
+             <param name="jsonFileName">The path of the settings file</param>
+            <exception cref="T:Dynamsoft.Barcode.BarcodeReaderException">
+            	The exception thrown by Dynamsoft Barcode Reader.
+            </exception>
+        </member>
+        <member name="M:Dynamsoft.Barcode.BarcodeReader.LoadSettings(System.String)">
+             <summary>
+             Loads parameter settings from a JSON string.
+             </summary>
+             <param name="jsonFileContent">A JSON string that represents the content of the settings</param>
+            <exception cref="T:Dynamsoft.Barcode.BarcodeReaderException">
+            	The exception thrown by Dynamsoft Barcode Reader.
+            </exception>
+        </member>
+        <member name="M:Dynamsoft.Barcode.BarcodeReader.AppendParameterTemplateFromFile(System.String)">
+            <summary>
+            Appends the parameter template from a JSON file. 
+            </summary>
+            <param name="jsonFileName">The path of the template file.</param>
+            <exception cref="T:Dynamsoft.Barcode.BarcodeReaderException">
+            The exception thrown by Dynamsoft Barcode Reader.
+            </exception>
+        </member>
+        <member name="M:Dynamsoft.Barcode.BarcodeReader.AppendParameterTemplate(System.String)">
+            <summary>
+            Appends the parameter template from a JSON string. 
+            </summary>
+            <param name="jsonFileContent">A JSON string that represents the content of the parameter template</param>
+            <exception cref="T:Dynamsoft.Barcode.BarcodeReaderException">
+            The exception thrown by Dynamsoft Barcode Reader.
+            </exception>
+        </member>
+        <member name="M:Dynamsoft.Barcode.BarcodeReader.UnloadParameterTemplate(System.String)">
+            <summary>
+            Unload the template of a specified name.
+            </summary>
+            <param name="strTemplateName">The name of the template</param>
+            <exception cref="T:Dynamsoft.Barcode.BarcodeReaderException">
+            The exception thrown by Dynamsoft Barcode Reader.
+            </exception>
+        </member>
+        <member name="M:Dynamsoft.Barcode.BarcodeReader.GetAllParameterTemplateNames">
+            <summary>
+            Gets all parameter template name.
+            </summary>
+            <returns>All template names</returns>
+        </member>
+        <member name="M:Dynamsoft.Barcode.BarcodeReader.DecodeFile(System.String,System.String)">
+            <summary>
+            Decodes barcodes in a specified image file.
+            </summary>
+            <param name="strFileName">The local path of the file</param>
+            <param name="templateName">The template name</param>
+            <returns>All barcodes have been read. If no barcodes are read, an array with length 0 is returned.</returns>
+            <exception cref="T:Dynamsoft.Barcode.BarcodeReaderException">
+            The exception thrown by Dynamsoft Barcode Reader.
+            </exception>
+        </member>
+        <member name="M:Dynamsoft.Barcode.BarcodeReader.DecodeFileInMemory(System.Byte[],System.String)">
+            <summary>
+            Decodes barcode from an image file in memory.
+            </summary>
+            <param name="bytFileStream">The image file bytes in memory.</param>
+            <param name="templateName">The template name</param>
+            <returns>All barcodes have been read. If no barcodes are read, an array with length 0 is returned.</returns>
+            <exception cref="T:Dynamsoft.Barcode.BarcodeReaderException">
+            The exception thrown by Dynamsoft Barcode Reader.
+            </exception>
+        </member>
+        <member name="M:Dynamsoft.Barcode.BarcodeReader.DecodeBitmap(System.Drawing.Bitmap,System.String)">
+            <summary>
+             Decodes barcodes from bitmap. It will only decode the current page when handling multi-page images.
+            </summary>
+            <param name="bitmap">
+             The image to be decoded.
+            </param>
+             <param name="templateName">The template name</param>
+            <returns>
+             All barcodes have been read. If no barcodes are read, an array with length 0 is returned.
+            </returns>
+            <exception cref="T:Dynamsoft.Barcode.BarcodeReaderException">
+            	The exception thrown by Dynamsoft Barcode Reader.
+            </exception>
+        </member>
+        <member name="M:Dynamsoft.Barcode.BarcodeReader.DecodeBuffer(System.Byte[],System.Int32,System.Int32,System.Int32,Dynamsoft.Barcode.EnumImagePixelFormat,System.String)">
+            <summary>
+             Decodes barcodes from an image raw buffer.
+            </summary>
+            <param name="bytBuffer">
+             The image raw buffer.
+            </param>
+            <param name="iWidth">
+             The width of the image buffer.
+            </param>
+            <param name="iHeight">
+             The height of the image buffer.
+            </param>
+            <param name="iStride">
+             The stride width (also called scan width) of the image buffer.
+            </param>
+            <param name="emFormat">
+             The pixel format of the image buffer.
+            </param>
+             <param name="templateName">The template name</param>
+            <returns>
+             All barcodes have been read. If no barcodes are read, an array with length 0 is returned.
+            </returns>
+            <exception cref="T:Dynamsoft.Barcode.BarcodeReaderException">
+            	The exception thrown by Dynamsoft Barcode Reader.
+            </exception>
+        </member>
+        <member name="M:Dynamsoft.Barcode.BarcodeReader.DecodeBase64String(System.String,System.String)">
+            <summary>
+            Decodes barcodes from the base64 encoded string of a file.
+            </summary>
+            <param name="strBase64">The base64 encoded string of a file.</param>
+            <param name="templateName">The template name</param>
+            <returns>All barcodes have been read. If no barcodes are read, an array with length 0 is returned.</returns>
+            <exception cref="T:Dynamsoft.Barcode.BarcodeReaderException">
+            The exception thrown by Dynamsoft Barcode Reader.
+            </exception>
+        </member>
+        <member name="M:Dynamsoft.Barcode.BarcodeReader.GetAllLocalizationResults">
+            <summary>
+            Gets all barcode localization results. It contains all recognized barcodes and unrecognized barcodes.
+            </summary>
+            <returns>All barcodes have been localized. If no barcodes are read , an array with length 0 is returned.</returns>
+        </member>
+        <member name="P:Dynamsoft.Barcode.BarcodeReader.LicenseKeys">
+            <summary>
+            Gets or sets the license keys.
+            </summary>
+        </member>
+        <member name="T:Dynamsoft.Barcode.EnumErrorCode">
+            <summary>
+             Defines the error codes of Dynamsoft.BarcodeReader.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_SUCCESS">
+            <summary>
+             Successful.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_UNKNOWN">
+            <summary>
+             Unknown error.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_NO_MEMORY">
+            <summary>
+             Not enough memory to perform the operation.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_NULL_REFERENCE">
+            <summary>
+             Null reference.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_LICENSE_INVALID">
+            <summary>
+             The license is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_LICENSE_EXPIRED">
+            <summary>
+             The license has expired.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_FILE_NOT_FOUND">
+            <summary>
+             The file is not found.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_FILETYPE_NOT_SUPPORTED">
+            <summary>
+             The file type is not supported.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_BPP_NOT_SUPPORTED">
+            <summary>
+             The BPP(Bits per pixel) is not supported.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_INDEX_INVALID">
+            <summary>
+             The index is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_BARCODE_FORMAT_INVALID">
+            <summary>
+             The barcode format is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_CUSTOM_REGION_INVALID">
+            <summary>
+             The input region value is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_MAX_BARCODE_NUMBER_INVALID">
+            <summary>
+             The maximum barcode number is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_IMAGE_READ_FAILED">
+            <summary>
+             Failed to read the image.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_TIFF_READ_FAILED">
+            <summary>
+             Failed to read the TIFF image.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_QR_LICENSE_INVALID">
+            <summary>
+             The QR Code license is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_1D_LICENSE_INVALID">
+            <summary>
+             The 1D Barcode license is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_DIB_BUFFER_INVALID">
+            <summary>
+             The DIB(Device-independent bitmaps) buffer is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_PDF417_LICENSE_INVALID">
+            <summary>
+             The PDF417 license is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_DATAMATRIX_LICENSE_INVALID">
+            <summary>
+             The DATAMATRIX license is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_PDF_READ_FAILED">
+            <summary>
+            Failed to read the PDF file.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_PDF_DLL_MISSING">
+            <summary>
+            The PDF DLL is missing.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_PAGE_NUMBER_INVALID">
+            <summary>
+            The page number is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_CUSTOM_SIZE_INVALID">
+            <summary>
+            The custom size is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_CUSTOM_MODULESIZE_INVALID">
+            <summary>
+            The custom module size is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_RECOGNITION_TIMEOUT">
+            <summary>
+            Recognition timeout.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_SYSTEM_EXCEPTION">
+            <summary>
+             The system exceptions.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_JSON_PARSE_FAILED">
+            <summary>
+            Failed to parse the JSON string.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_JSON_TYPE_INVALID">
+            <summary>
+            The value type is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_JSON_KEY_INVALID">
+            <summary>
+            The key is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_JSON_VALUE_INVALID">
+            <summary>
+            The value is invalid or out of range.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_JSON_NAME_KEY_MISSING">
+            <summary>
+            The mandatory key "Name" is missing.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_JSON_NAME_VALUE_DUPLICATED">
+            <summary>
+            The value of the key "Name" is duplicated.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_TEMPLATE_NAME_INVALID">
+            <summary>
+            The template name is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_JSON_NAME_REFERENCE_INVALID">
+            <summary>
+            The name reference is invalid.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumErrorCode.DBR_PARAMETER_VALUE_INVALID">
+            <summary>
+            The parameter value is invalid.
+            </summary>
+        </member>
+        <member name="T:Dynamsoft.Barcode.BarcodeReaderException">
+            <summary>
+             The exception of Dynamsoft.BarcodeReader.
+            </summary>
+        </member>
+        <member name="M:Dynamsoft.Barcode.BarcodeReaderException.#ctor">
+            <summary>
+             Create an instance of BarcodeReaderException.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.BarcodeReaderException.Code">
+            <summary>
+             Get or set the error code.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.BarcodeReaderException.Message">
+            <summary>
+             Get the message that describes the current exception.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.BarcodeReaderException.StackTrace">
+            <summary>
+             Get the string representation of the frames on the call stack at the time the current exception was thrown.
+            </summary>
+        </member>
+        <member name="T:Dynamsoft.Barcode.EnumBarcodeFormat">
+            <summary>
+             Describes the type of the barcode.
+            </summary>
+            <remarks>
+             All the formats can be combined, such as BarcodeFormat.CODE_39 | BarcodeFormat.CODE_128.
+            </remarks>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumBarcodeFormat.All">
+            <summary>
+            All supported formats
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumBarcodeFormat.OneD">
+            <summary>
+            One-D
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumBarcodeFormat.CODE_39">
+            <summary>
+            Code 39
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumBarcodeFormat.CODE_128">
+            <summary>
+            Code 128
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumBarcodeFormat.CODE_93">
+            <summary>
+            Code 93
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumBarcodeFormat.CODABAR">
+            <summary>
+            Codabar
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumBarcodeFormat.ITF">
+            <summary>
+            Interleaved 2 of 5
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumBarcodeFormat.EAN_13">
+            <summary>
+            EAN-13
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumBarcodeFormat.EAN_8">
+            <summary>
+            EAN-8
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumBarcodeFormat.UPC_A">
+            <summary>
+            UPC-A
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumBarcodeFormat.UPC_E">
+            <summary>
+            UPC-E
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumBarcodeFormat.INDUSTRIAL_25">
+            <summary>
+            Industrial 2 of 5
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumBarcodeFormat.PDF417">
+            <summary>
+            PDF417
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumBarcodeFormat.QR_CODE">
+            <summary>
+            QRCode
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumBarcodeFormat.DATAMATRIX">
+            <summary>
+            DataMatrix
+            </summary>
+        </member>
+        <member name="T:Dynamsoft.Barcode.EnumImagePixelFormat">
+            <summary>
+             Describes the image pixel format.
+            </summary> 
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumImagePixelFormat.IPF_Binary">
+            <summary>
+            0:Black, 1:White
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumImagePixelFormat.IPF_BinaryInverted">
+            <summary>
+            0:White, 1:Black
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumImagePixelFormat.IPF_GrayScaled">
+            <summary>
+            8bit gray
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumImagePixelFormat.IPF_NV21">
+            <summary>
+            NV21
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumImagePixelFormat.IPF_RGB_565">
+            <summary>
+            16bit
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumImagePixelFormat.IPF_RGB_555">
+            <summary>
+            16bit
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumImagePixelFormat.IPF_RGB_888">
+            <summary>
+            24bit
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumImagePixelFormat.IPF_ARGB_8888">
+            <summary>
+            32bit
+            </summary>
+        </member>
+        <member name="T:Dynamsoft.Barcode.EnumResultType">
+            <summary>
+            Describes the extended result type.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumResultType.EDT_StandardText">
+            <summary>
+            Specifies the standard text. This means the result that only includes default barcode bytes.
+            </summary>  
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumResultType.EDT_RawText">
+            <summary>
+            Specifies the raw tText. This means the result that includes start/stop characters, check digits, etc.
+            </summary> 
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumResultType.EDT_CandidateText">
+            <summary>
+            Specifies all the candidate text. This means all the candidate text results decoded from the barcode. 
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumResultType.EDT_PartialText">
+            <summary>
+            Specifies the partial text. This means part of the text result decoded from the barcode. 
+            </summary> 
+        </member>
+        <member name="T:Dynamsoft.Barcode.EnumTerminateStage">
+            <summary>
+            Describes the stage when the results are returned.
+            </summary>
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumTerminateStage.ETS_Prelocalized">
+            <summary>
+            Prelocalized.
+            </summary>   
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumTerminateStage.ETS_Localized">
+            <summary>
+            Localized.
+            </summary>   
+        </member>
+        <member name="F:Dynamsoft.Barcode.EnumTerminateStage.ETS_Recognized">
+            <summary>
+            Recognized.
+            </summary>   
+        </member>
+        <member name="T:Dynamsoft.Barcode.TextResult">
+            <summary>
+             Stores the text result including the format, the text, the bytes, the localization result etc.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.TextResult.BarcodeFormat">
+            <summary>
+             Gets the barcode format.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.TextResult.BarcodeText">
+            <summary>
+             Gets the barcode text.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.TextResult.BarcodeBytes">
+            <summary>
+             Gets the barcode data in a byte array.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.TextResult.LocalizationResult">
+            <summary>
+             Gets the corresponding localization result.
+            </summary>
+        </member>
+        <member name="T:Dynamsoft.Barcode.ExtendedResult">
+            <summary>
+            Stores the extended result including the format, the bytes, etc.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.ExtendedResult.ResultType">
+            <summary>
+            Gets extended result type.
+            </summary> 
+        </member>
+        <member name="P:Dynamsoft.Barcode.ExtendedResult.BarcodeFormat">
+            <summary>
+            Gets the barcode format.
+            </summary>     
+        </member>
+        <member name="P:Dynamsoft.Barcode.ExtendedResult.Confidence">
+            <summary>
+            Gets the confidence of the result.
+            </summary>     
+        </member>
+        <member name="P:Dynamsoft.Barcode.ExtendedResult.Bytes">
+            <summary>
+            Gets the content in a byte array.
+            </summary> 
+        </member>
+        <member name="T:Dynamsoft.Barcode.LocalizationResult">
+            <summary>
+            Stores the localization result including the boundary, the angle, the page num, the region name, etc. 
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.LocalizationResult.TerminateStage">
+            <summary>
+            Gets the stage of localization result.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.LocalizationResult.BarcodeFormat">
+            <summary>
+             Gets the barcode format.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.LocalizationResult.Angle">
+            <summary>
+             Gets the barcode angle. Values range from 0 to 360.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.LocalizationResult.ResultPoints">
+            <summary>
+            Gets the coordinates of the barcode vertices
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.LocalizationResult.ModuleSize">
+            <summary>
+            Gets the barcode module size (the minimum bar width in pixel)
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.LocalizationResult.PageNumber">
+            <summary>
+            Gets the page number the barcode locates in. The index is 0-based.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.LocalizationResult.RegionName">
+            <summary>
+            Gets the region name the barcode locates in.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.LocalizationResult.DocumentName">
+            <summary>
+            Gets the document name the barcode locates in.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.LocalizationResult.ExtendedResultArray">
+            <summary>
+            Gets the corresponding extended result array.
+            </summary>
+        </member>
+        <member name="T:Dynamsoft.Barcode.Resource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.Resource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.Resource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.Resource.DynamicPdf">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.Resource.DynamicPdfx64">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.Resource.DynamsoftBarcodeReaderx64">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.Resource.DynamsoftBarcodeReaderx86">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.Resource.vcomp110x64">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Dynamsoft.Barcode.Resource.vcomp110x86">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,39 @@
+﻿<Window x:Class="AsignarVehiculo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SLTA"
+        mc:Ignorable="d"
+        Title="Aisgnar vehiculo a zona - SLTA" Height="450" Width="800" WindowState="Maximized" >
+    <Window.Background>
+        <ImageBrush ImageSource="../Resources/WindowBackground.bmp"/>
+    </Window.Background>
+    <Viewbox Stretch="Fill">
+        <Grid x:Name="grid" Height="419" Width="792">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="BtnAtras" Content="Atrás" HorizontalAlignment="Left" Margin="10,380,0,9" Width="100" Background="Gray" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Style="{DynamicResource RoundCorner}"/>
+            <Button x:Name="BtnAsignar" Content="Asignar" HorizontalAlignment="Left" Margin="682,380,0,9" Width="100" Background="Gray" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Style="{DynamicResource RoundCorner}"/>
+            <Button x:Name="BtnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="344,380,0,9" Width="100" Background="Gray" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Style="{DynamicResource RoundCorner}"/>
+
+            <Label x:Name="label" Content="Ingrese VIN: " HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Label x:Name="label1" Content="Ingrese patio: " HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.132,0.007" FontSize="20" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <ComboBox x:Name="comboBoxVin" HorizontalAlignment="Left" Margin="161,65,0,0" VerticalAlignment="Top" Width="148" Background="#FF282525" Height="37" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+
+            <ComboBox x:Name="comboBoxPatio" HorizontalAlignment="Left" Margin="161,148,0,0" VerticalAlignment="Top" Width="148"  Background="#FF282525" Height="37" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <Label x:Name="label2" Content="Ingrese zona: " HorizontalAlignment="Left" Margin="13,228,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt"/>
+            <ComboBox x:Name="comboBoxZona" HorizontalAlignment="Left" Margin="161,228,0,0" VerticalAlignment="Top" Width="148" Background="#FF282525" Height="37" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt">
+            </ComboBox>
+            <ComboBox x:Name="comboBoxFila" HorizontalAlignment="Left" Margin="651,65,0,0" VerticalAlignment="Top" Width="120" Background="#FF282525" Height="37" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt">
+            </ComboBox>
+            <ComboBox x:Name="comboBoxEstiva" HorizontalAlignment="Left" Margin="651,148,0,0" VerticalAlignment="Top" Width="120" Background="#FF282525" Height="37" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt">
+            </ComboBox>
+            <Label x:Name="label3" Content="Fila" HorizontalAlignment="Left" Margin="561,65,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Label x:Name="label4" Content="Estiva" HorizontalAlignment="Left" Margin="561,148,0,0" VerticalAlignment="Top" FontSize="20" />
+
+
+        </Grid>
+    </Viewbox>
+</Window>

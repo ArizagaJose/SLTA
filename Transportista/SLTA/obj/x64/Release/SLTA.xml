@@ -1,0 +1,183 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SLTA
+</name>
+</assembly>
+<members>
+<member name="T:SLTA.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_admin">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_location">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_users">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.icon_viaje">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.Proxima_Nova_Alt_Light">
+<summary>
+  Busca un recurso adaptado de tipo System.Byte[].
+</summary>
+</member>
+<member name="P:SLTA.My.Resources.Resources.WindowBackground">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:SLTA.My.MyWpfExtension">
+ <summary>
+ Módulo utilizado para definir las propiedades disponibles en el espacio de nombres My de WPF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:SLTA.My.MyWpfExtension.Application">
+ <summary>
+ Devuelve el objeto de aplicación de la aplicación en ejecución
+ </summary>
+</member>
+<member name="P:SLTA.My.MyWpfExtension.Computer">
+ <summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member>
+<member name="P:SLTA.My.MyWpfExtension.User">
+ <summary>
+ Devuelve información sobre el usuario actual.  Si desea ejecutar la aplicación con las credenciales 
+ del usuario de Windows actual, llame a My.User.InitializeWithWindowsUser().
+ </summary>
+</member>
+<member name="P:SLTA.My.MyWpfExtension.Log">
+ <summary>
+ Devuelve el registro de la aplicación. El archivo de configuración de la aplicación puede configurar los clientes de escucha.
+ </summary>
+</member>
+<member name="P:SLTA.My.MyWpfExtension.Windows">
+ <summary>
+ Devuelve la colección de Windows definida en el proyecto.
+ </summary>
+</member>
+<member name="T:SLTA.ListaCamiones">
+<summary>
+ListaCamiones
+</summary>
+</member>
+<member name="M:SLTA.ListaCamiones.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.ListaCamionesEnViaje">
+<summary>
+ListaCamionesEnViaje
+</summary>
+</member>
+<member name="M:SLTA.ListaCamionesEnViaje.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.ListaLotes">
+<summary>
+ListaLotes
+</summary>
+</member>
+<member name="M:SLTA.ListaLotes.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.Menu">
+<summary>
+Menu
+</summary>
+</member>
+<member name="M:SLTA.Menu.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.MenuAdministrador">
+<summary>
+MenuAdministrador
+</summary>
+</member>
+<member name="M:SLTA.MenuAdministrador.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.Navegador">
+<summary>
+Navegador
+</summary>
+</member>
+<member name="M:SLTA.Navegador.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.WinViaje">
+<summary>
+WinViaje
+</summary>
+</member>
+<member name="M:SLTA.WinViaje.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SLTA.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:SLTA.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:SLTA.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="T:SLTA.Login">
+<summary>
+Login
+</summary>
+</member>
+<member name="M:SLTA.Login.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+</members>
+</doc>

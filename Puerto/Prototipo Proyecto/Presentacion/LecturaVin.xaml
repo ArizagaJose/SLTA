@@ -1,0 +1,31 @@
+﻿<Window x:Class="EscanearVin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SLTA"
+        mc:Ignorable="d"
+        Title="{DynamicResource Title_EscanearVin}" Height="532" Width="934" WindowState="Maximized" Loaded="Window_Loaded">
+    <Viewbox Stretch="Fill">
+        <Grid Height="419" Width="792">
+            <Grid.Background>
+                <ImageBrush ImageSource="../Resources/WindowBackground.bmp"/>
+            </Grid.Background>
+            <Label x:Name="LblUsuario" Content="Usuario" HorizontalAlignment="Right" VerticalAlignment="Top" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" FontSize="24"/>
+            <Label Content="" HorizontalAlignment="Left" Margin="60,130,0,0" VerticalAlignment="Top" Height="140" Width="140">
+                <Label.Background>
+                    <ImageBrush ImageSource="../Resources/icons8_qr_code_512px.png"/>
+                </Label.Background>
+            </Label>
+            <Label Content="" HorizontalAlignment="Left" Margin="573,130,0,0" VerticalAlignment="Top" Height="140" Width="140">
+                <Label.Background>
+                    <ImageBrush ImageSource="../Resources/icons8_hand_with_pen_512px.png"/>
+                </Label.Background>
+            </Label>
+            <Button Content="{DynamicResource Btn_QR}" HorizontalAlignment="Left" Margin="80,285,0,0" VerticalAlignment="Top" Width="100" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Height="30" Background="Gray" Style="{DynamicResource RoundCorner}" Click="Button_Click_2"/>
+            <Button Content="{DynamicResource Btn_IngresarVehiculo}" HorizontalAlignment="Left" Margin="593,285,0,0" VerticalAlignment="Top" Width="100" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Height="30" Background="Gray" Click="Button_Click" Style="{DynamicResource RoundCorner}"/>
+            <Button Content="{DynamicResource Btn_Atras}" HorizontalAlignment="Left" Margin="10,379,0,0" VerticalAlignment="Top" Width="100" Height="30" Background="Gray" FontFamily="/SLTA;component/Resources/#Proxima Nova Alt Lt" Click="Button_Click_1" Style="{DynamicResource RoundCorner}"/>
+
+        </Grid>
+    </Viewbox>
+</Window>
